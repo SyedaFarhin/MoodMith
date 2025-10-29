@@ -14,19 +14,19 @@ const AddsBannerSlider = (props) => {
         spaceBetween={10}
         navigation={true}
         modules={[Navigation]}
-        className="mySwiper"
+        className="smlBtn"
       >
         <SwiperSlide>
-          <BannerBox img={'/banner1.png'} />
+          <BannerBox img={'/banner1.png'} link={"/"}/>
         </SwiperSlide>
         <SwiperSlide>
-          <BannerBox img={'/banner1.png'} />
+          <BannerBox img={'/banner1.png'} link={"/"}/>
         </SwiperSlide>
         <SwiperSlide>
-          <BannerBox img={'/banner1.png'} />
+          <BannerBox img={'/banner1.png'} link={"/"}/>
         </SwiperSlide>
         <SwiperSlide>
-          <BannerBox img={'/banner1.png'} />
+          <BannerBox img={'/banner1.png'} link={"/"}/>
         </SwiperSlide>
 
       </Swiper>

@@ -6,6 +6,12 @@ import AddsBannerSlider from "../../components/AddsBannerSlider";
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import ProductsSlider from "../../components/ProductsSlider";
+import BlogItem from "../../components/BlogItem";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { Navigation} from 'swiper/modules';
+import 'swiper/css/navigation';
 const Home = () => {
   const [value, setValue] = React.useState(0);
 
@@ -16,24 +22,6 @@ const Home = () => {
     <>
      <HomeSlider/>
      <HomeCatSlider/>
-     <section className="py-5 bg-white">
-  <div className="container">
-    <div className="freeShipping w-[80%] m-auto py-2 p-4 border border-[#ff5252] flex items-center justify-between rounded-md">
-      <div className="col1 flex items-center gap-4">
-      <LiaShippingFastSolid className="text-[50px]" />
-      <span className="text-[20px] font-[600]">Free Shipping</span>
-      </div>
-
-      <div className="col2">
-        <p className="mb-0 font-[500]">Free Delivery Now On Your First Order and over $200</p>
-      </div>
-
-      <p className="font-bold text-[25px]">- Only $200*</p>
-    </div>
-<AddsBannerSlider items={4}/>
-
-  </div>
-     </section>
 
      <section className="bg-white py-8">
   <div className="container">
@@ -54,23 +42,89 @@ const Home = () => {
         scrollButtons="auto"
         aria-label="scrollable auto tabs example"
       >
-        <Tab label="Item One" />
-        <Tab label="Item Two" />
-        <Tab label="Item Three" />
-        <Tab label="Item Four" />
-        <Tab label="Item Five" />
-        <Tab label="Item Six" />
-        <Tab label="Item Seven" />
+        <Tab label="Fashion" />
+        <Tab label="Electronics" />
+        <Tab label="Bag" />
+        <Tab label="Watches" />
+        <Tab label="Footwear" />
+        <Tab label="Beauty" />
+        <Tab label="Wellness" />
       </Tabs>
       </Box>
 
      
 </div>
     </div>
+
+    <ProductsSlider items={4}/>
+
+
   </div>
 
   
 </section>
+
+     <section className="py-5 bg-white">
+  <div className="container">
+    <div className="freeShipping w-[80%] m-auto py-2 p-4 border border-[#ff5252] flex items-center justify-between rounded-md">
+      <div className="col1 flex items-center gap-4">
+      <LiaShippingFastSolid className="text-[50px]" />
+      <span className="text-[20px] font-[600]">Free Shipping</span>
+      </div>
+
+      <div className="col2">
+        <p className="mb-0 font-[500]">Free Delivery Now On Your First Order and over $200</p>
+      </div>
+
+      <p className="font-bold text-[25px]">- Only $200*</p>
+    </div>
+<AddsBannerSlider items={4}/>
+
+  </div>
+     </section>
+
+     
+
+<section className="py-5 pt-0 bg-white">
+  <div className="container">
+  <h2 className="text-[20px] font-[600]">Latest Products</h2>
+
+  <ProductsSlider items={6}/>
+  <AddsBannerSlider items={4}/>
+
+  </div>
+</section>
+
+
+
+
+<section className="py-5 pt-0 bg-white">
+  <div className="container">
+  <h2 className="text-[20px] font-[600]">Featured Products</h2>
+
+  <ProductsSlider items={6}/>
+  <AddsBannerSlider items={3}/>
+
+  </div>
+</section>
+
+<section className="py-5 pt-0 bg-white blogSection">
+  <div className="py-5">
+    <Swiper
+      slidesPerView={3}
+      spaceBetween={10}
+      navigation={true}
+      modules={[Navigation]}
+      className="blogSlider"
+    >
+      <SwiperSlide>
+        <BlogItem />
+      </SwiperSlide>
+    </Swiper>
+  </div>
+</section>
+
+
 
      </>
   
