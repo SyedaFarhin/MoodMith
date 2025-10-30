@@ -130,3 +130,6 @@ nav ul button:hover{ background: none !important; }
   padding-right: 25px;
 }
 
+/* footer form input::placeholder{font-size:14px;} */
+footer form input::placeholder { font-size: 14px !important; }
+.btn-org{background: #ff5252 !important ; color: #fff !important;}
