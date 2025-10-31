@@ -13,6 +13,9 @@ import 'swiper/css';
 import { Navigation} from 'swiper/modules';
 import 'swiper/css/navigation';
 import Footer from "../../components/Footer";
+import HomeBannerV2 from "../../components/HomeBannerV2";
+import BannerBoxV2 from "../../components/BannerBoxV2";
+
 const Home = () => {
   const [value, setValue] = React.useState(0);
 
@@ -22,6 +25,24 @@ const Home = () => {
   return (
     <>
      <HomeSlider/>
+     <section className="py-6">
+      <div className="container flex gap-5 items-center">
+        <div className="part1 w-[65%]">
+      <HomeBannerV2/>
+          
+        </div>
+
+        <div className="part2 w-[30%] gap-5 flex items-center justify-between flex-col">
+  <BannerBoxV2 info="right" image={"https://serviceapi.spicezgold.com/download/1760160666204_1737020916820_New_Project_52.jpg"}/>
+  <BannerBoxV2 info="right" image={"https://serviceapi.spicezgold.com/download/1741664665391_1741497254110_New_Project_50.jpg"}/>
+</div>
+
+      </div> 
+
+      
+
+     </section>
+
      <HomeCatSlider/>
 
      <section className="bg-white py-8">
