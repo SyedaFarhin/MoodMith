@@ -29,6 +29,10 @@ nav ul button { text-transform: capitalize !important; }
 
 nav ul button:hover{ background: none !important; }
 
+
+.nav  li:hover .submenu { visibility:hidden; }
+.nav  li:hover .submenu { opacity: 1 !important;visibility: inherit;top:100% }
+
 .sliderHome { 
   overflow: inherit !important; 
 }
@@ -133,7 +137,7 @@ nav ul button:hover{ background: none !important; }
 /* footer form input::placeholder{font-size:14px;} */
 footer form input::placeholder { font-size: 14px !important; }
 .btn-org{background: #ff5252 !important ; color: #fff !important;}
-
+.btn-org:hover{background: #000 !important;}
 .swiper-pagination-bullet-active { 
   background: #ff5252 !important; 
 }
@@ -189,4 +193,23 @@ footer form input::placeholder { font-size: 14px !important; }
   right: 0px !important; 
   opacity: 1; 
 }
+
+.ReactCollapse--collapse{
+  transition:height 500ms;
+}
+
+.itemViewActions button.active svg {
+  color: #ff5252 !important;
+  opacity: 1;
+}
+
+.Mui-selected.MuiPaginationItem-page {
+  background: #ff5252 !important;
+  color: #fff !important;
+}
+
+
+.range-slider{height: 3px !important;}
+.range-slider .range-slider__thumb{width: 14px !important; height: 14px !important;}
+.range-slider .range-slider__thumb, .range-slider .range-slider__range{background: #ff5252 !important;}
 

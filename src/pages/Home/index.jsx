@@ -160,7 +160,6 @@ const Home = () => {
 </section>
 
 
-<Footer/>
      </>
   
   );

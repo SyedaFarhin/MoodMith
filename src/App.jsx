@@ -2,6 +2,7 @@ import { BrowserRouter,Route,Routes } from 'react-router-dom'
 import Header from './components/Header'
 import Home from './pages/Home'
 import ProductListing from './components/ProductListing'
+import Footer from './components/Footer'
 
 function App() {
   
@@ -14,6 +15,8 @@ function App() {
   <Route path={"/"} exact={true} element={<Home/>}/>
   <Route path={"/productlisting"} exact={true} element={<ProductListing />} />
 </Routes>
+<Footer/>
+
     </BrowserRouter>
 
 
