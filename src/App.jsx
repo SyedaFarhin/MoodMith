@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Home from './pages/Home'
 import ProductListing from './components/ProductListing'
 import Footer from './components/Footer'
+import ProductDetails from './pages/ProductDetails'
 
 function App() {
   
@@ -14,6 +15,8 @@ function App() {
 <Routes>
   <Route path={"/"} exact={true} element={<Home/>}/>
   <Route path={"/productlisting"} exact={true} element={<ProductListing />} />
+  <Route path={"/product/:id"} exact={true} element={<ProductDetails />} />
+
 </Routes>
 <Footer/>
 

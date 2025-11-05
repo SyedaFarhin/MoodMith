@@ -32,6 +32,8 @@ const ProductItem = () => {
     </h3>
 
     <Rating name="size-small" defaultValue={4} size="small" readOnly />
+
+    
   </div>
 
   <div className="actions absolute top-[15px] right-[5px] z-50 flex items-center gap-2 flex-col w-[50px]">
