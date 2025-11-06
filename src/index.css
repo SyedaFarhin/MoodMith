@@ -243,3 +243,15 @@ footer form input::placeholder { font-size: 14px !important; }
 .zoomProductSliderThumbs .swiper-wrapper{padding-top:38px !important}
 
 p{font-size: 14px; line-height: 25px;}
+
+.productContent .actions button{min-width: 40px !important; height: 30px !important; border: 1px solid rgba(0,0,0,0.1) !important; color: rgba(0,0,0,0.7);}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.iiz div{width: 100%;}
+.iiz div:first-child{border-radius: 10px !important; overflow: hidden;}

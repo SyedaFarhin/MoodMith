@@ -15,6 +15,8 @@ import 'swiper/css/navigation';
 import Footer from "../../components/Footer";
 import HomeBannerV2 from "../../components/HomeBannerV2";
 import BannerBoxV2 from "../../components/BannerBoxV2";
+import { Link } from "react-router-dom";
+
 
 const Home = () => {
   const [value, setValue] = React.useState(0);
