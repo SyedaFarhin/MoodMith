@@ -4,9 +4,11 @@
 
 
 body{
-  font-family: "Montserrat", sans-serif;
+
+  font-family: "Poppins";
   font-optical-sizing: auto;
-  background: #f5f0f0;
+  background: #dca48f50;
+  
 }
 ::-webkit-scrollbar {
   width: 8px !important;
@@ -19,7 +21,7 @@ body{
   background: #fff;
 }
 
-.container { width: 95%; margin: auto; }
+.container { width: 95%; margin: auto;  }
 
 .link:hover { color: #ff5252; }
 
@@ -136,7 +138,7 @@ nav ul button:hover{ background: none !important; }
 
 /* footer form input::placeholder{font-size:14px;} */
 footer form input::placeholder { font-size: 14px !important; }
-.btn-org{background: #ff5252 !important ; color: #fff !important;}
+.btn-org{background: rgb(235, 208, 166) !important ; color: #9b6247 !important;}
 .btn-org:hover{background: #000 !important;}
 .swiper-pagination-bullet-active { 
   background: #ff5252 !important; 

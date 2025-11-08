@@ -8,37 +8,41 @@ import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 const Footer = () => {
   return (
-    <footer className="py-6 ">
+    <footer className="py-6" style={{backgroundColor:"#9b6247"}}>
       <div className="container">
         <div className="flex items-center justify-center gap-2">
           <div className="col flex items-center justify-center flex-col group w-[20%]">
             <LiaShippingFastSolid
               className="text-[50px] transition-all duration-300 group-hover:text-primary group-hover:-translate-y-1"
+              style={{color:"rgb(235, 208, 166)"}}
             />
-            <h3 className="text-[16px] font-[600] mt-3">Free Shipping</h3>
-            <p className="text-[14px] font-[500]">For all Orders Over $100</p>
+            <h3 className="text-[16px] font-[600] mt-3" style={{color:"rgb(235, 208, 166)"}}>Free Shipping</h3>
+            <p className="text-[14px] font-[500]" style={{color:"rgb(255, 255, 255)"}}>For all Orders Over $100</p>
           </div>
           
           <div className="col flex items-center justify-center flex-col group w-[20%]">
             <PiKeyReturnLight
               className="text-[50px] transition-all duration-300 group-hover:text-primary group-hover:-translate-y-1"
+              style={{color:"rgb(235, 208, 166)"}}
             />
-            <h3 className="text-[16px] font-[600] mt-3">30 Days Returns</h3>
-            <p className="text-[14px] font-[500]">For an Exchange Product</p>
+            <h3 className="text-[16px] font-[600] mt-3" style={{color:"rgb(235, 208, 166)"}}>30 Days Returns</h3>
+            <p className="text-[14px] font-[500]" style={{color:"rgb(255, 255, 255)"}}>For an Exchange Product</p>
           </div>
           <div className="col flex items-center justify-center flex-col group w-[20%]">
             <MdPayment
               className="text-[50px] transition-all duration-300 group-hover:text-primary group-hover:-translate-y-1"
+              style={{color:"rgb(235, 208, 166)"}}
             />
-            <h3 className="text-[16px] font-[600] mt-3">Secured Payment</h3>
-            <p className="text-[14px] font-[500]">Payment Cards Accepted</p>
+            <h3 className="text-[16px] font-[600] mt-3" style={{color:"rgb(235, 208, 166)"}}>Secured Payment</h3>
+            <p className="text-[14px] font-[500]" style={{color:"rgb(255, 255, 255)"}}>Payment Cards Accepted</p>
           </div>
           <div className="col flex items-center justify-center flex-col group w-[20%]">
             <LiaGiftSolid
               className="text-[50px] transition-all duration-300 group-hover:text-primary group-hover:-translate-y-1"
+              style={{color:"rgb(235, 208, 166)"}}
             />
-            <h3 className="text-[16px] font-[600] mt-3">Special Gifts </h3>
-            <p className="text-[14px] font-[500]">Our First Product Order</p>
+            <h3 className="text-[16px] font-[600] mt-3" style={{color:"rgb(235, 208, 166)"}}>Special Gifts </h3>
+            <p className="text-[14px] font-[500]" style={{color:"rgb(255, 255, 255)"}}>Our First Product Order</p>
           </div>
         </div>
 
@@ -48,23 +52,23 @@ const Footer = () => {
 
         <div className="footer flex items-center py-8 ">
   <div className="part1 w-[25%] border-r border-[rgba(0,0,0,0.2)]">
-    <h2 className="text-[20px] font-[600] mb-4">Contact us</h2>
-    <p className="text-[14px] font-[400] pb-4">
+    <h2 className="text-[20px] font-[600] mb-4" style={{color:"rgb(235, 208, 166)"}}>Contact us</h2>
+    <p className="text-[14px] font-[400] pb-4" style={{color:"rgb(255, 255, 255)"}} >
       Classyshop - Mega Super Store<br />
       507-Union Trade Centre<br />
       France
     </p>
 
-    <Link className="link" to="mailto:someone@example.com">
+    <Link className="link" to="mailto:someone@example.com" style={{color:"rgb(255, 255, 255)"}}>
       sales@yourcompany.com
     </Link>
 
-    <span className="text-[22px] font-[600] block w-full mt-3 text-[#ff5252]">
+    <span className="text-[22px] font-[600] block w-full mt-3 text-[#ff5252]" style={{color:"rgb(255, 255, 255)"}}>
       (+91) 9876-543-210
     </span>
 
-    <div className="flex items-center gap-2">
-  <IoChatboxOutline className="text-[40px] text-[#ff5252]" />
+    <div className="flex items-center gap-2" style={{color:"rgb(255, 255, 255)"}}>
+  <IoChatboxOutline className="text-[40px] text-[#ff5252]" style={{color:"rgb(235, 208, 166)"}}/>
   <span className="text-[16px] font-[600]">
     Online Chat<br />
     Get Expert Help
@@ -75,9 +79,9 @@ const Footer = () => {
 
   <div className="part2_col1 w-[40%] flex pl-8">
   <div className="part2_coll w-[50%]">
-    <h2 className="text-[20px] font-[600] mb-4">Products</h2>
+    <h2 className="text-[20px] font-[600] mb-4" style={{color:"rgb(235, 208, 166)"}}>Products</h2>
 
-    <ul className="list">
+    <ul className="list" style={{color:"rgb(255, 255, 255)"}}>
       <li className="list-none text-[14px] w-full mb-2">
         <Link to="/" className="link">Prices drop</Link>
       </li>
@@ -98,9 +102,9 @@ const Footer = () => {
 
   <div className="part2_col2 w-[50%] flex">
   <div className="part2_coll w-[50%]">
-    <h2 className="text-[20px] font-[600] mb-4">Our Company</h2>
+    <h2 className="text-[20px] font-[600] mb-4" style={{color:"rgb(235, 208, 166)"}}>Our Company</h2>
 
-    <ul className="list">
+    <ul className="list" style={{color:"rgb(255, 255, 255)"}}>
       <li className="list-none text-[14px] w-full mb-2">
         <Link to="/" className="link">Delivery</Link>
       </li>
@@ -127,10 +131,10 @@ const Footer = () => {
 
 
 <div className="part2 w-[35%] flex pl-8 flex-col pr-8">
-  <h2 className="text-[18px] font-[600] mb-4">Subscribe to newsletter</h2>
-  <p className="text-[13px]">Subscribe to our latest newsletter to get news about special discounts.</p>
+  <h2 className="text-[18px] font-[600] mb-4" style={{color:"rgb(235, 208, 166)"}}> Subscribe to newsletter</h2>
+  <p className="text-[13px]" style={{color:"rgb(255, 255, 255)"}}>Subscribe to our latest newsletter to get news about special discounts.</p>
 
-  <form className="mt-5">
+  <form className="mt-5" >
     <input
       type="text"
       className="w-full h-[45px] border outline-none pl-4 pr-4 rounded-sm mb-4 focus:border-[#000]"

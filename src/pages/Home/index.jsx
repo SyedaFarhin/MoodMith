@@ -47,13 +47,13 @@ const Home = () => {
 
      <HomeCatSlider/>
 
-     <section className="bg-white py-8">
+     <section className="bg-[ #dca48f33] py-8">
   <div className="container">
     <div className="flex items-center justify-between">
       <div className="leftSec">
-        <h2 className="text-[20px] font-[600]">Popular Products</h2>
-        <p className="text-[14px] font-[500]">
-          Do not miss the current offers until the end of March.
+        <h2 className="text-[25px] font-[600]" style={{color:" #2f5641"}}>Popular Products</h2>
+        <p className="text-[19px] font-[500]" style={{color:" #9b6247"}}>
+          Do not miss the current offers until the end of March
         </p>
       </div>
 
@@ -88,19 +88,19 @@ const Home = () => {
   
 </section>
 
-     <section className="py-5 bg-white">
+     <section className="py-5 bg-[ #dca48f33]">
   <div className="container">
     <div className="freeShipping w-[80%] m-auto py-2 p-4 mb-20 border border-[#ff5252] flex items-center justify-between rounded-md">
       <div className="col1 flex items-center gap-4">
-      <LiaShippingFastSolid className="text-[50px]" />
-      <span className="text-[20px] font-[600]">Free Shipping</span>
+      <LiaShippingFastSolid className="text-[50px] " style={{color:" #2f5641"}}/>
+      <span className="text-[20px] font-[600]" style={{color:" #2f5641"}}>Free Shipping</span>
       </div>
 
       <div className="col2">
-        <p className="mb-0 font-[500]">Free Delivery Now On Your First Order and over $200</p>
+        <p className="mb-0 font-[500] text-[18px]"  style={{color:" #9b6247"}}>Free Delivery Now On Your First Order and over $200</p>
       </div>
 
-      <p className="font-bold text-[25px]">- Only $200*</p>
+      <p className="font-bold text-[25px]" style={{color:" #2f5641"}}>- Only $200*</p>
     </div>
 <AddsBannerSlider items={4}/>
 
@@ -109,9 +109,9 @@ const Home = () => {
 
      
 
-<section className="py-5 pt-0 bg-white">
+<section className="py-5 pt-0 bg-[ #dca48f33]">
   <div className="container">
-  <h2 className="text-[20px] font-[600]">Latest Products</h2>
+  <h2 className="text-[25px] font-[600]" style={{color:" #2f5641"}}>Latest Products</h2>
 
   <ProductsSlider items={6}/>
   {/* <AddsBannerSlider items={4}/> */}
@@ -122,9 +122,9 @@ const Home = () => {
 
 
 
-<section className="py-5 pt-0 bg-white">
+<section className="py-5 pt-0 bg-[ #dca48f33]">
   <div className="container">
-  <h2 className="text-[20px] font-[600]">Featured Products</h2>
+  <h2 className="text-[25px] font-[600]" style={{color:" #2f5641"}}>Featured Products</h2>
 
   <ProductsSlider items={6}/>
   <AddsBannerSlider items={3}/>
@@ -132,9 +132,9 @@ const Home = () => {
   </div>
 </section>
 
-<section className="py-5 pt-0 bg-white blogSection">
+<section className="py-5 pt-0 bg-[ #dca48f33] blogSection">
   <div className="container">
-    <h2 className="text-[20px] font-[600] mb-4">From The Blog</h2>
+    <h2 className="text-[25px] font-[600] mb-4" style={{color:" #2f5641"}}>From The Blog</h2>
     <Swiper
       slidesPerView={4}
       spaceBetween={10}
