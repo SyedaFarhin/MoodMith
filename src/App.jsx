@@ -15,6 +15,9 @@ import ProductZoom from "./components/ProductZoom"
 import ProductDetailsComponent from "./components/ProductDetailsComponent"
 import Register from "./pages/Register"
 import Cart from "./pages/Cart"
+import toast, { Toaster } from 'react-hot-toast';
+import Verify from "./pages/Verify"
+import ForgotPassword from "./pages/ForgotPassword"
 
 const MyContext = createContext()
 
@@ -34,11 +37,21 @@ function App() {
   const handleCloseProductDetails = () => {
     setOpenProductDetails(false);
   };
+  const openAlertBox=(status,msg)=>{
+    if(status==="success"){
+      toast.success(msg)
+    }
+    if(status==="error"){
+      toast.error(msg)
+    }
+   
+  }
   const values={
     setOpenProductDetails,
     setOpenCartPanel,
     openCartPanel,
-    toggleCartPanel
+    toggleCartPanel,
+    openAlertBox
   }
 
   return (
@@ -53,12 +66,15 @@ function App() {
   <Route path={"/login"} exact={true} element={<Login/>} />
   <Route path={"/register"} exact={true} element={<Register/>} />
   <Route path={"/cart"} exact={true} element={<Cart/>} />
+  <Route path={"/verify"} exact={true} element={<Verify/>} />
+  <Route path={"/forgot-password"} exact={true} element={<ForgotPassword/>} />
 
 </Routes>
 <Footer/>
 </MyContext.Provider>
     </BrowserRouter>
 
+    <Toaster />
 
     <Dialog
         maxWidth={maxWidth}
