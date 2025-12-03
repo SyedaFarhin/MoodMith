@@ -2,283 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body{
-
-  font-family: "Poppins";
-  font-optical-sizing: auto;
-  background: #dca48f50;
+@layer base {
+  body {
+    @apply font-sans antialiased;
+  }
   
-}
-::-webkit-scrollbar {
-  width: 8px !important;
-  height: 8px !important;
-}
-::-webkit-scrollbar-thumb {
-  background: #ccc;
-}
-::-webkit-scrollbar-track {
-  background: #fff;
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
-.container { width: 95%; margin: auto;  }
+@layer utilities {
+  .gradient-hero {
+    background: linear-gradient(135deg, #14b8a6 0%, #a78bfa 50%, #fb923c 100%);
+  }
+  
+  .gradient-soft {
+    background: linear-gradient(135deg, rgba(20, 184, 166, 0.1) 0%, rgba(167, 139, 250, 0.1) 50%, rgba(251, 146, 60, 0.1) 100%);
+  }
 
-.link:hover { color: #ff5252; }
-
-.MuiBadge-badge { background-color: #ff5252 !important; }
-
-nav ul button { text-transform: capitalize !important; }
-
-nav ul button:hover{ background: none !important; }
-
-
-.nav  li:hover .submenu { visibility:hidden; }
-.nav  li:hover .submenu { opacity: 1 !important;visibility: inherit;top:100% }
-
-.sliderHome { 
-  overflow: inherit !important; 
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll 20s linear infinite;
+  }
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  display: flex;
-  align-items: center;
-  justify-content: center;
- 
-  border-radius: 100%;
-  width: 45px;
-  height: 45px;
-  min-width: 45px;
- 
-  transition: all 0.2s;
-}
-
-.swiper-button-prev:after,
-.swiper-button-next:after {
-  font-size: 22px !important;
-  color: #000;
-}
-
-.smlBtn .swiper-button-prev,
-.smlBtn .swiper-button-next {
-  width: 30px !important;
-  height: 30px !important;
-  min-width: 30px !important;
-  top: 55% !important;
-}
-
-/* .smlBtn .swiper-button-prev:after,
-.smlBtn .swiper-button-next:after {
-  font-size: 22px !important;
-  color: #000;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.swiper-button-prev, .swiper-button-next {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  width: 45px;
-  height: 45px;
-  min-width: 45px;  
-}
-
-.homeCatSlider{overflow: inherit !important;}
-.homeCatSlider .swiper-button-prev,
-.homeCatSlider .swiper-button-next{
-  width: 30px;
-  height: 30px;
-  min-width: 30px;
-}
-.homeCatSlider .swiper-button-prev:after,
-.homeCatSlider .swiper-button-next:after{
-  font-size: 16px !important;
-}
-
-.homeCatSlider .swiper-button-prev{left: -10px !important;}
-.homeCatSlider .swiper-button-next{right: -10px !important;}
-
-.homeCatSlider .item{border: 1px solid rgba(0,0,0,0.1);}
-
-.homeCatSlider .swiper-button-prev:hover,
-.homeCatSlider .swiper-button-next:hover{
-  background: #ff5252 !important;
-}
-.homeCatSlider .swiper-button-prev:hover::after,
-.homeCatSlider .swiper-button-next:hover::after{
-  color: #fff !important;
-}
-.MuiTabs-indicator {
-  background-color: #ff5252 !important;
-}
-
-.MuiTab-textColorPrimary.Mui-selected {
-  color: #ff5252 !important;
-}
-
-.productsSlider .swiper-wrapper {
-  padding: 45px;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-/* footer form input::placeholder{font-size:14px;} */
-footer form input::placeholder { font-size: 14px !important; }
-.btn-org{background: rgb(235, 208, 166) !important ; color: #9b6247 !important;}
-.btn-org:hover{background: #000 !important;}
-.swiper-pagination-bullet-active { 
-  background: #ff5252 !important; 
-}
-
-.homeSliderV2 .info h4 { 
-  /* transition-duration: 1.2s;  */
-  right: -100px;
-  opacity: 0;
-  transition: all 1.2s ease;
-}
-.homeSliderV2 .info h2 { 
-  transition-duration: 1.5s; 
-}
-.homeSliderV2 .info h3 { 
-  /* transition-duration: 1.8s;  */
- 
-  transition: all 1.2s ease;
-}
-.homeSliderV2 .info .btn_ { 
-  transition-duration: 2.1s; 
-}
-
-
-
-
-
-
-
-
-.homeSliderV2 .swiper-slide-active .info { 
-  /* right: 0px !important; 
-  opacity: 1;  */
-  right: 0;
-  opacity: 1;
-}
-.homeSliderV2 .swiper-slide-active .info h4 { 
-  /* right: 0px !important; 
-  opacity: 1;  */
-  right: 0;
-  opacity: 1;
-}
-.homeSliderV2 .swiper-slide-active .info h3 { 
-  /* right: 0px !important; 
-  opacity: 1;  */
-  right: 0;
-  opacity: 1;
-}
-.homeSliderV2 .swiper-slide-active .info h2 { 
-  right: 0px !important; 
-  opacity: 1; 
-}
-.homeSliderV2 .swiper-slide-active .info .btn_ { 
-  right: 0px !important; 
-  opacity: 1; 
-}
-
-.ReactCollapse--collapse{
-  transition:height 500ms;
-}
-
-.itemViewActions button.active svg {
-  color: #ff5252 !important;
-  opacity: 1;
-}
-
-.Mui-selected.MuiPaginationItem-page {
-  background: #ff5252 !important;
-  color: #fff !important;
-}
-
-
-.range-slider{height: 3px !important;}
-.range-slider .range-slider__thumb{width: 14px !important; height: 14px !important;}
-.range-slider .range-slider__thumb, .range-slider .range-slider__range{background: #ff5252 !important;}
-
-.zoomProductSliderThumbs .swiper-slide {  }
-
-.zoomProductSliderThumbs .swiper-button-next {
-  bottom: 0px !important;
-  right: inherit !important;
-  top: inherit !important;
-  width: 100% !important;
-  height: 30px !important;
-  border-radius: 0px !important;
-}
-
-.zoomProductSliderThumbs .swiper-button-next::after {
-  transform: rotate(90deg);
-}
-
-.zoomProductSliderThumbs .swiper-button-prev {
-  top: 20px !important;
-  left: 0 !important;
-  width: 100% !important;
-  height: 30px !important;
-  border-radius: 0px !important;
-}
-
-.zoomProductSliderThumbs .swiper-button-prev::after {
-  transform: rotate(90deg);
-}
-
-.zoomProductSliderThumbs .swiper-wrapper{padding-top:38px !important}
-
-p{font-size: 14px; line-height: 25px;}
-
-.productContent .actions button{min-width: 40px !important; height: 30px !important; border: 1px solid rgba(0,0,0,0.1) !important; color: rgba(0,0,0,0.7);}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-.iiz div{width: 100%;}
-.iiz div:first-child{border-radius: 10px !important; overflow: hidden;}
-
-.reviewScroll::-webkit-scrollbar {width: 5px !important;}
-.reviewScroll::-webkit-scrollbar-thumb {background: #ccc !important;}
-
-.productDetailsModal .MuiDialogContent-root {padding: 0px !important;}
-
-.productsSlider .swiper, .blogSection .swiper {overflow: inherit !important;}
-
-.cartPanel .MuiPaper-root {width: 400px;overflow: hidden;}
-
-#size-menu .MuiButtonBase-root{font-size:12px !important}
-.otpBox input {
-  border: 1px solid rgba(0,0,0,0.3) !important;
-  outline: none !important;
-  border-radius: 4px;
-}
-
-.otpBox input:focus {
-  border: 1px solid rgba(0,0,0,0.7) !important;
-}
-
-.otpPage .container {
-  height: 90vh;
-  display: flex;
-}
