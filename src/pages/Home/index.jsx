@@ -10,15 +10,16 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import ProductsSlider from "../../components/ProductsSlider";
 import BlogItem from "../../components/BlogItem";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import { Navigation} from 'swiper/modules';
-import 'swiper/css/navigation';
 import Footer from "../../components/Footer";
 import HomeBannerV2 from "../../components/HomeBannerV2";
 import BannerBoxV2 from "../../components/BannerBoxV2";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
 
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 const Home = () => {
   // const [value, setValue] = React.useState(0);
   const moods = ['Abundance', 'Calm', 'Love', 'Gratitude', 'Home Harmony'];
@@ -236,109 +237,38 @@ const Home = () => {
 
 
 
-<section className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-hero px-4 py-16">
-      {/* Floating Mithai Icons */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(6)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute text-4xl md:text-6xl opacity-30"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-            animate={{
-              y: [0, -30, 0],
-              rotate: [0, 10, -10, 0],
-            }}
-            transition={{
-              duration: 4 + Math.random() * 2,
-              repeat: Infinity,
-              delay: Math.random() * 2,
-            }}
-          >
-            🍬
-          </motion.div>
-        ))}
-      </div>
+<Swiper
+      modules={[Navigation, Pagination, Autoplay]}
+      navigation
+      pagination={{ clickable: true }}
+      autoplay={{ delay: 6000 }}
+      loop={true}
+      slidesPerView={1}
+      style={{ width: "100%", height: "auto", }}
+    >
+      <SwiperSlide>
+        <img src="/1.jpg" alt="1" style={{ width: "100%" }} />
+      </SwiperSlide>
 
-      {/* Sparkles */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(8)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-2 h-2 bg-yellow-300 rounded-full"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-            animate={{
-              scale: [0.5, 1.5, 0.5],
-              opacity: [0.3, 1, 0.3],
-            }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              delay: Math.random() * 2,
-            }}
-          />
-        ))}
-      </div>
+      <SwiperSlide>
+        <img src="/2.jpg" alt="2" style={{ width: "100%" }} />
+      </SwiperSlide>
 
-      <div className="relative z-10 max-w-5xl mx-auto text-center">
-        {/* SUKU Avatar Message */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="mb-8 bg-white/20 backdrop-blur-sm rounded-2xl p-4 md:p-6 border border-white/30 max-w-md mx-auto"
-        >
-          <p className="text-white text-sm md:text-base font-medium">
-            "Hey there, I can tell you need a little sweetness today."
-          </p>
-        </motion.div>
+      <SwiperSlide>
+        <img src="/3.jpg" alt="3" style={{ width: "100%" }} />
+      </SwiperSlide> 
+      
+      <SwiperSlide>
+        <img src="/4.jpg" alt="3" style={{ width: "100%" }} />
+      </SwiperSlide> 
 
-        {/* Headline */}
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
-        >
-          STOP SCROLLING. START FEELING. <span className="text-yellow-300">💛</span>
-        </motion.h1>
+     
+      
 
-        {/* Subtext */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-white/90 text-lg md:text-xl lg:text-2xl mb-12 space-y-2"
-        >
-          <p>Where your emotions shop before you do.</p>
-          <p>Meet SUKU™ — your sweet soul of AI.</p>
-          <p className="font-semibold">Because retail therapy just got real.</p>
-        </motion.div>
 
-        {/* CTA Buttons */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-        >
-          <button className="bg-white text-teal-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-50 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto">
-            ✨ Shop My Mood
-          </button>
-          <button className="bg-white/20 backdrop-blur-sm text-white border-2 border-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/30 transform hover:scale-105 transition-all duration-300 w-full sm:w-auto">
-            💬 Meet My Buddy
-          </button>
-          <button className="bg-yellow-300 text-gray-800 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-200 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto">
-            🧘 Sweeten My Day
-          </button>
-        </motion.div>
-      </div>
-    </section>
+      </Swiper>
+     
+
 
     <section className="py-20 px-4 bg-gradient-to-br from-teal-50 via-purple-50 to-peach-50">
       <div className="max-w-6xl mx-auto">
