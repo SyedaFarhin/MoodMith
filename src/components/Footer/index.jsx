@@ -190,9 +190,11 @@ const Footer = () => {
 
     {/* CTA Buttons */}
     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-      <button className="bg-gradient-to-r from-pink-500 to-rose-500 px-8 py-4 rounded-full font-bold text-lg hover:from-pink-600 hover:to-rose-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto">
-        Shop Now 🍬
-      </button>
+    <Link to="/shopbymood">
+  <button className="bg-gradient-to-r from-pink-500 to-rose-500 px-8 py-4 rounded-full font-bold text-lg hover:from-pink-600 hover:to-rose-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto">
+    Shop Now 🍬
+  </button>
+</Link>
       <button className="bg-gradient-to-r from-teal-500 to-cyan-500 px-8 py-4 rounded-full font-bold text-lg hover:from-teal-600 hover:to-cyan-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto">
         Talk to Suku 💬
       </button>
