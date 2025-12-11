@@ -465,9 +465,11 @@ const Home = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
+          <Link to="/meetsuku">
           <button className="bg-gradient-to-r from-teal-500 to-purple-500 text-white px-10 py-4 rounded-full font-bold text-lg md:text-xl hover:from-teal-600 hover:to-purple-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
             Meet SUKU 🤍
           </button>
+          </Link>
         </motion.div>
       </div>
     </section>

@@ -19,6 +19,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import Verify from "./pages/Verify"
 import ForgotPassword from "./pages/ForgotPassword"
 import ShopByMood from "./pages/ShopByMood"
+import MeetSuku from "./pages/MeetSuku"
 
 const MyContext = createContext()
 
@@ -63,6 +64,8 @@ function App() {
 <Routes>
   <Route path={"/"} exact={true} element={<Home/>}/>
   <Route path={"/shopbymood"} exact={true} element={<ShopByMood/>}/>
+  <Route path={"/meetsuku"} exact={true} element={<MeetSuku/>}/>
+
   <Route path={"/productlisting"} exact={true} element={<ProductListing />} />
   <Route path={"/product/:id"} exact={true} element={<ProductDetails />} />
   <Route path={"/login"} exact={true} element={<Login/>} />
