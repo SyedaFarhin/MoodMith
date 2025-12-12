@@ -555,9 +555,11 @@ const Home = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
+          <Link to="/moodbuddy">
           <button className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-10 py-4 rounded-full font-bold text-lg md:text-xl hover:from-indigo-600 hover:to-purple-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
             Find My Buddy 🌍
           </button>
+          </Link>
         </motion.div>
       </div>
     </section>
@@ -615,9 +617,11 @@ const Home = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
+          <Link to="/sukoonspace">
           <button className="bg-gradient-to-r from-green-500 to-teal-500 text-white px-10 py-4 rounded-full font-bold text-lg md:text-xl hover:from-green-600 hover:to-teal-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
             Join a Sukoon Session 🧘‍♀️
           </button>
+          </Link>
         </motion.div>
       </div>
     </section>

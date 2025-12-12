@@ -20,6 +20,8 @@ import Verify from "./pages/Verify"
 import ForgotPassword from "./pages/ForgotPassword"
 import ShopByMood from "./pages/ShopByMood"
 import MeetSuku from "./pages/MeetSuku"
+import MoodBuddy from "./pages/MoodBuddy"
+import SukoonSpace from "./pages/SukoonSpace"
 
 const MyContext = createContext()
 
@@ -65,6 +67,9 @@ function App() {
   <Route path={"/"} exact={true} element={<Home/>}/>
   <Route path={"/shopbymood"} exact={true} element={<ShopByMood/>}/>
   <Route path={"/meetsuku"} exact={true} element={<MeetSuku/>}/>
+  <Route path={"/moodbuddy"} exact={true} element={<MoodBuddy/>}/>
+  <Route path={"/sukoonspace"} exact={true} element={<SukoonSpace/>}/>
+
 
   <Route path={"/productlisting"} exact={true} element={<ProductListing />} />
   <Route path={"/product/:id"} exact={true} element={<ProductDetails />} />

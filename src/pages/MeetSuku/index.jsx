@@ -30,7 +30,7 @@ const MeetSuku = () => {
   const [selectedMood, setSelectedMood] = useState(null);
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-b from-yellow-50 to-orange-100 flex flex-col items-center px-4 py-10">
+    <div className="min-h-screen w-full bg-gradient-to-b from-yellow-50 to-orange-100 flex flex-col items-center px-4 py-40">
       {/* Title */}
       <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
         MEET SUKU
