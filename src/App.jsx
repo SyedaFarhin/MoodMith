@@ -22,6 +22,7 @@ import ShopByMood from "./pages/ShopByMood"
 import MeetSuku from "./pages/MeetSuku"
 import MoodBuddy from "./pages/MoodBuddy"
 import SukoonSpace from "./pages/SukoonSpace"
+import SweetFeed from "./pages/SweetFeed"
 
 const MyContext = createContext()
 
@@ -69,6 +70,7 @@ function App() {
   <Route path={"/meetsuku"} exact={true} element={<MeetSuku/>}/>
   <Route path={"/moodbuddy"} exact={true} element={<MoodBuddy/>}/>
   <Route path={"/sukoonspace"} exact={true} element={<SukoonSpace/>}/>
+  <Route path={"/sweetfeed"} exact={true} element={<SweetFeed/>}/>
 
 
   <Route path={"/productlisting"} exact={true} element={<ProductListing />} />

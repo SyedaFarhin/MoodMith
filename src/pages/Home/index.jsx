@@ -679,9 +679,11 @@ const Home = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
+          <Link to="/sweetfeed">
           <button className="bg-gradient-to-r from-pink-500 to-rose-500 text-white px-10 py-4 rounded-full font-bold text-lg md:text-xl hover:from-pink-600 hover:to-rose-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
             Join the Sweet Side 🍬
           </button>
+          </Link>
         </motion.div>
       </div>
     </section>
