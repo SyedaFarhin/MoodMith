@@ -27,7 +27,7 @@ const Header = () => {
    
   return (
     <header className="">
-        <div className="top-strip py-2 border-b-[1px] border-gray-250">
+        {/* <div className="top-strip py-2 border-b-[1px] border-gray-250">
         <div className="container">
             <div className="flex items-center justify-between">
 <div className="col1 w-[50%]">
@@ -52,7 +52,7 @@ const Header = () => {
 
             </div>
             </div>
-            </div>
+            </div> */}
 
 <div className="header py-3 border-b-[1px] border-gray-250">
     <div className="container flex items-center justify-between">
@@ -60,9 +60,9 @@ const Header = () => {
             <Link to={"/"}><img src="logo.png"/></Link>
         </div>
       
-        <div className="col2 w-[45%]">
+        {/* <div className="col2 w-[45%]">
           <Search/>
-        </div>
+        </div> */}
 
         <div className="col3 w-[30%] flex items-center pl-7">
   <ul className="flex items-center gap-3">
@@ -76,7 +76,7 @@ const Header = () => {
       </Link>
     </li>
 
-    <li>
+    {/* <li>
     <IconButton aria-label="cart">
       <StyledBadge badgeContent={4} color="secondary">
         <FaRegHeart  />
@@ -91,7 +91,7 @@ const Header = () => {
         <MdOutlineShoppingCart onClick={()=>context.setOpenCartPanel(true)}/>
       </StyledBadge>
     </IconButton>
-    </li>
+    </li> */}
 
     
 
@@ -105,7 +105,7 @@ const Header = () => {
 
 </div>
 
-<Navigation/>
+{/* <Navigation/> */}
 
 
 

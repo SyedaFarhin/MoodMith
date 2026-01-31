@@ -63,7 +63,7 @@ function App() {
     <>
     <BrowserRouter>
     <MyContext.Provider value={values}>
-    {/* <Header/> */}
+    <Header/>
 <Routes>
   <Route path={"/"} exact={true} element={<Home/>}/>
   <Route path={"/shopbymood"} exact={true} element={<ShopByMood/>}/>
