@@ -387,9 +387,7 @@ const Home = () => {
                 </h3>
                 <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white/90 text-sm mb-4">Curated items to match your mood</p>
-                  <button className="bg-white text-gray-800 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition-colors">
-                    Explore Box
-                  </button>
+                 
                 </div>
               </div>
             </motion.div>
@@ -397,17 +395,7 @@ const Home = () => {
         </div>
 
         {/* CTA Button */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center"
-        >
-          <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-10 py-4 rounded-full font-bold text-lg md:text-xl hover:from-purple-600 hover:to-pink-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-            Explore All Boxes 🍬
-          </button>
-        </motion.div>
+        
       </div>
     </section>
 
