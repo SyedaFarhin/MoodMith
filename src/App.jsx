@@ -23,6 +23,11 @@ import MeetSuku from "./pages/MeetSuku"
 import MoodBuddy from "./pages/MoodBuddy"
 import SukoonSpace from "./pages/SukoonSpace"
 import SweetFeed from "./pages/SweetFeed"
+import Products from "./pages/Products"
+import Checkout from "./pages/Checkout"
+import OrderSuccess from "./pages/OrderSuccess"
+import CartSidebar from "./components/CartSidebar"
+import { CartProvider } from "./context/CartContext"
 
 const MyContext = createContext()
 
@@ -62,6 +67,7 @@ function App() {
   return (
     <>
     <BrowserRouter>
+    <CartProvider>
     <MyContext.Provider value={values}>
     <Header/>
 <Routes>
@@ -72,18 +78,22 @@ function App() {
   <Route path={"/sukoonspace"} exact={true} element={<SukoonSpace/>}/>
   <Route path={"/sweetfeed"} exact={true} element={<SweetFeed/>}/>
 
-
+  <Route path={"/products"} exact={true} element={<Products />} />
   <Route path={"/productlisting"} exact={true} element={<ProductListing />} />
   <Route path={"/product/:id"} exact={true} element={<ProductDetails />} />
   <Route path={"/login"} exact={true} element={<Login/>} />
   <Route path={"/register"} exact={true} element={<Register/>} />
   <Route path={"/cart"} exact={true} element={<Cart/>} />
+  <Route path={"/checkout"} exact={true} element={<Checkout/>} />
+  <Route path={"/order-success"} exact={true} element={<OrderSuccess/>} />
   <Route path={"/verify"} exact={true} element={<Verify/>} />
   <Route path={"/forgot-password"} exact={true} element={<ForgotPassword/>} />
 
 </Routes>
 <Footer/>
 </MyContext.Provider>
+<CartSidebar />
+</CartProvider>
     </BrowserRouter>
 
     <Toaster />

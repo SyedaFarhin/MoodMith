@@ -8,6 +8,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import Navigation from "./Navigation";
 import { MyContext } from "../../App";
+import { useCart } from "../../context/CartContext";
 const StyledBadge = styled(Badge)(({ theme }) => ({
   '& .MuiBadge-badge': {
     right: -3,
@@ -18,12 +19,12 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 
 
- 
 
 
 
 const Header = () => {
   const context=useContext(MyContext)
+  const { itemCount, openCart } = useCart();
    
   return (
     <header className="">
@@ -76,7 +77,7 @@ const Header = () => {
       </Link>
     </li>
 
-    {/* <li>
+    <li>
     <IconButton aria-label="cart">
       <StyledBadge badgeContent={4} color="secondary">
         <FaRegHeart  />
@@ -84,20 +85,18 @@ const Header = () => {
     </IconButton>
     </li>
 
-
     <li>
     <IconButton aria-label="cart">
-      <StyledBadge badgeContent={4} color="secondary">
-        <MdOutlineShoppingCart onClick={()=>context.setOpenCartPanel(true)}/>
+      <StyledBadge badgeContent={itemCount} color="secondary">
+        <MdOutlineShoppingCart onClick={openCart}/>
       </StyledBadge>
     </IconButton>
-    </li> */}
+    </li>
 
     
 
   </ul>
 </div>
-
 
 
 
